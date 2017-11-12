@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@CHARSET "ISO-8859-1";
+
+label,
+button {
+    display: block;
+    margin-top: 15px;
+}
+
+.message {
+    display: none;
+}
