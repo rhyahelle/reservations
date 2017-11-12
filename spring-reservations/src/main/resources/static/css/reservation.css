@@ -44,9 +44,15 @@ button,
     box-sizing: border-box;
     border: 2px solid;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 .message {
+	color : aliceblue;
     display: none;
 }
 
@@ -57,4 +63,13 @@ button,
   position: relative;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    input[type=date] {
+      width: 100%;
+    }
+	#resID {
+	  width: 100%;
+	}
 }

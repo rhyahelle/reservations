@@ -15,7 +15,6 @@
     
     return reservationFormValues;
   }
-  
 
 $(document).ready(function() {
 
@@ -59,7 +58,9 @@ $(document).ready(function() {
           id =  errorCodeToHtmlIdMap[500]; 
         }
         
-        $(id).fadeIn();
+        $(id).fadeIn();  
+
+        
       }
     });
     

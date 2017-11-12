@@ -9,16 +9,16 @@
 
   <form id="reservationForm">
     <label>Facility ID:</label>
-    <input id="resID" name="resourceId" type="input" />
+    <input id="resID" name="resourceId" type="input"  required/>
   
     <label>Start Date:</label>
-    <input name="fromDate"   type="date" />
+    <input name="fromDate"   type="date" required/>
   
     <label>End Date:</label>
-    <input name="toDate"     type="date" />
+    <input name="toDate"     type="date" required/>
   
     <label>Reserved By:</label>
-    <input name="owner"      type="input" size="64" />
+    <input name="owner"      type="input" size="64"  required/>
   	
   	<div class="container" >
       <button id="submitReservation">Place Reservation</button>
