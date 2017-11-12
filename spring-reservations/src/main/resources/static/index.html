@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Reservation Portal</title>
+  <link rel="stylesheet" type="text/css" href="/css/reservation.css" />
 </head>
 <body>
 
-  <div><a href="/reservation-list.html">List of reservations</a></div>
-  <div><a href="/reservation.html">Make a reservation</a></div>
+  <div class="container"> 
+  	 <input type="button" id="listOfRes" onclick="location.href='/reservation-list.html';" value="List of reservations" />  	 
+  </div>
+    	
+  <div class="container">
+        <input type="button"  id="makeARes" onclick="location.href='/reservation.html';" value="Make a reservation" />   
+  </div>
 
 </body>
 </html>

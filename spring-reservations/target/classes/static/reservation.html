@@ -9,7 +9,7 @@
 
   <form id="reservationForm">
     <label>Facility ID:</label>
-    <input name="resourceId" type="input" />
+    <input id="resID" name="resourceId" type="input" />
   
     <label>Start Date:</label>
     <input name="fromDate"   type="date" />
@@ -19,9 +19,11 @@
   
     <label>Reserved By:</label>
     <input name="owner"      type="input" size="64" />
-  
-    <button id="submitReservation">Place Reservation</button>
-  
+  	
+  	<div class="container" >
+      <button id="submitReservation">Place Reservation</button>
+    </div>
+    
     <div id="validation-error" class="message">Reservation failed - please check your input for completeness.</div>
     <div id="conflict-error"   class="message">The room is already reserved for this period, please choose a different period.</div>
     <div id="system-error"     class="message">Reservation failed - please try again later.</div>

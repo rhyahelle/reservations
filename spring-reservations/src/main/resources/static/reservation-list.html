@@ -10,10 +10,10 @@
   <div id="system-error" class="message">We are sorry, retrieving the list of reservations failed - please try again later.</div></h2>
   <div id="action-error" class="message">We are sorry, we were unable to execute your action - please try again later.</div></h2>
 
-  <div id="reservation-list">
+  <div id="reservation-list" style="overflow-x:auto;">
     <!-- the content will be placed here -->
   </div>    
-
+  
   <script id="reservation-list-template" type="text/x-handlebars-template">  
     <table>
       <caption>List of reservations</caption>
@@ -35,7 +35,7 @@
           <td>{{startDate}}</td>            
           <td>{{endDate}}</td> 
           <td>{{owner}}</td> 
-          <td><a href="#" class="action" reservationId="{{id}}">Cancel</a>           
+          <td><button><a href="#" class="action" reservationId="{{id}}">Cancel</a></button>           
         </tr>
     {{/each}}
       </tbody>
